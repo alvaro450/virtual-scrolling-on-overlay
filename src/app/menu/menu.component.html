@@ -1,0 +1,28 @@
+<p>Menu</p>
+<mat-menu #faMenu="matMenu"
+          [overlapTrigger]="false"
+          (click)="$event.stopPropagation()"
+
+          [class]="'content-filter-dropdown-menu'">
+    <div class="dropdown-body" (click)="$event.stopPropagation()">
+        <div class="search-box-container">
+            <mat-form-field class="search-input">
+                <input #lhsSearchInputElement
+                       matInput
+                       type="search"
+                       placeholder="Search by branch#, FA name, FA#"
+                       />
+            </mat-form-field>
+        </div>
+        <div class="fa-select-holder">
+            <div class="fa-select">
+                <div class="fa-option" (click)="alert('test')">
+                    <!-- <rj-checkbox [state]="getFaAllState$() | async"></rj-checkbox> -->
+                    <div rj-mat-label class="names">
+                        <div class="fa-name">All</div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>  
+</mat-menu>
