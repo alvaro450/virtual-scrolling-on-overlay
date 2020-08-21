@@ -24,7 +24,7 @@
 .sub-group-item {
   display: flex; 
   flex-direction: row;
-  height: 35px
+  height: 35px;
 }
 .sub-group-item--hidden {
   display: none;
@@ -39,4 +39,17 @@
 .fa-item {
   height: 35px;
   display: block;
+}
+
+.fa-group {
+  height: 35px;
+}
+
+.checkbox {
+  margin: 0;
+}
+
+.checkbox-label {
+  line-height: 35px;
+  padding-left: 5px;
 }
